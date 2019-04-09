@@ -1,12 +1,5 @@
-import numpy as np
-
-a=12
-
-def some_func(a,b,c):
-    print('no docstring')
+def some_func(a, b, c):
+    """a description"""
   
-    if a==1:
-        return b
-    else:
-        return c
-       
+    if a == 1:
+        return b * c
