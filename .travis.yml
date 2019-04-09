@@ -1,0 +1,17 @@
+dist: xenial   # required for Python >= 3.7
+language: python
+python:
+  - '2.7'
+  - '3.6'
+
+# command to install dependencies
+install:
+  - pip install flake8 pylint
+
+# command to run tests
+jobs:  
+  include:
+    - stage: "Tests"                # naming the Tests stage
+      name: "Linting Tests"            # names the first Tests stage job
+      script: flake8
+      script: pylint *
