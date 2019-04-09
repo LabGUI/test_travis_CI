@@ -35,8 +35,7 @@ Todo:
 
 
 def some_func(anet, basil, coriander):
-    """a description"""
-  
+    """a description"""  
     answer = anet
     if anet == 1:
         answer = basil * coriander
